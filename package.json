@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:css && npm run build:js && npm run build:pages",
-    "build:css": "stylus src/index.css > docs/main.css",
+    "build:css": "stylus src/index.css > docs/docs.css",
     "build:js": "browserify src/index.js > docs/index.js",
     "build:pages": "copyfiles src/index.html -f docs",
     "watch": "watchify index.js > docs/index.js"
@@ -16,6 +16,7 @@
   "devDependencies": {
     "stylus": "latest",
     "browserify": "latest",
-    "watchify": "latest"
+    "watchify": "latest",
+    "copyfiles": "latest"
   }
 }
