@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:css && npm run build:js && npm run build:pages",
-    "build:css": "stylus src/index.css > docs/index.css",
+    "build:css": "copyfiles src/index.css -f docs",
     "build:js": "copyfiles src/index.js -f docs",
     "build:pages": "copyfiles src/index.html -f docs"
   },
