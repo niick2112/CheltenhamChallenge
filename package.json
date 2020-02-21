@@ -7,16 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:css && npm run build:js && npm run build:pages",
     "build:css": "stylus src/index.css > docs/index.css",
-    "build:js": "browserify src/index.js > docs/index.js",
-    "build:pages": "copyfiles src/index.html -f docs",
-    "watch": "watchify index.js > docs/index.js"
+    "build:js": "copyfiles src/index.js -f docs",
+    "build:pages": "copyfiles src/index.html -f docs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "stylus": "latest",
-    "browserify": "latest",
-    "watchify": "latest",
     "copyfiles": "latest"
   }
 }

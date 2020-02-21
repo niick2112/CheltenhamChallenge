@@ -34,9 +34,6 @@ function loadValues(values) {
   html += "</tr></table>";
 
   $("#league-table").append(html)
-  //document.getElementById("league-table").innerHTML = html;
-
-
 }
 
 function setPodium (values) {
