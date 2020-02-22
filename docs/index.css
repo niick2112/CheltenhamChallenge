@@ -10,7 +10,10 @@ td {
 }
 table {
   border-collapse: separate;
-  border-spacing: 10px 0;
+  border-spacing: 25px 0;
+  table-layout:fixed;
+  width:100%;
+  overflow-x: scroll;
 }
 .container h2 {
   padding: 10px;
