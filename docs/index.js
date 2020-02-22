@@ -49,4 +49,21 @@ function setPodium (values) {
     $(".third").append("<p>" + third[2] + "</p>");
 }
 
+function loadRunners(values) {
+
+  for (var j=0; j<values.length; j++) {
+    data = values[j];
+
+    var name = data[0]
+    var img = data[4]
+    var description = data[3]
+    var card = ""
+
+    card += "<div class='card' style='width: 15rem;'><img class='card-img-top' src='" + img + "'></img><div class='card-body'><h5 class='card-title'>" + name + "</h5><p class='card-text'>" + description + "</p></div></div>";
+
+    $(".runners").append(card);
+
+}
+
+}
   

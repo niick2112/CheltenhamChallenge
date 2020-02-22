@@ -7,7 +7,7 @@
         <script src="index.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <title>Cheltenham Challenge 2020</title>
+        <title>Cheltenham Challenge 2020 - Rules</title>
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
@@ -35,47 +35,19 @@
             <li class="nav-item">
               <a class="nav-link" href="runners-and-riders.html">Runners and Riders</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="rules.html">Rules</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Cheltenham Challenge 2020</h1>
-        <p class="lead">The fight to get rich by beating Rich.</p>
+        <h1 class="display-4">Rules</h1>
 </div>
         <div class="container" style="max-width:1400px">
 
         <div class="row">
-                <div class="col-sm-5">
-                    <div id="league-table">
-                        <h2>Live Standings</h2>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="podium">
-                        <h2>Current podium</h2>
-                        <div class="second">
-                            <p>SECOND 🥈</p>
-                        </div>
-                        <div class="first">
-                            <p>FIRST 🥇</p>
-                        </div>
-                        <div class="third">
-                            <p>THIRD 🥉</p>
-                        </div>
-                    </div>
-                    <div class="useful-link">
-                  <h2>Useful Links</h2>
-                  <ul>
-                      <li><a href="">Results spreadsheet</a></li>
-                      <li><a href="">Day 1 form</a></li>
-                      <li><a href="">Day 2 form</a></li>
-                      <li><a href="">Day 3 form</a></li>
-                      <li><a href="">Day 4 form</a></li>
-                  </ul>
-                </div>
+                <div class="col-sm-9">
                 </div>
                 <div class="col-sm-3">
                     <a class="twitter-timeline" data-height="1200px" href="https://twitter.com/CheltenhamRaces?ref_src=twsrc%5Etfw">Tweets by CheltenhamRaces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -93,28 +65,6 @@
   
   </footer>
   <!-- Footer -->
-
-        <script src="https://apis.google.com/js/api.js"></script>
-<script>
-function start() {
-  // 2. Initialize the JavaScript client library.
-  gapi.client.init({
-    'apiKey': 'AIzaSyB2-cee6PtK-VSIadBF63OEptBVoyK--Hk',
-  }).then(function() {
-    // 3. Initialize and make the API request.
-    return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/LeagueTable!I2:M20'
-    })
-  }).then(function(response) {
-    loadValues(response.result.values);
-    setPodium(response.result.values);
-  }, function(reason) {
-    console.log('Error: ' + reason.result.error.message);
-  });
-};
-// 1. Load the JavaScript client library.
-gapi.load('client', start);
-</script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

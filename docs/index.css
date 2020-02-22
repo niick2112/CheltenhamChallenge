@@ -21,6 +21,10 @@ table {
 .jumbotron p {
   padding: 10px;
 }
+.jumbotron {
+    background-color: #209CEE;
+    color: white;
+}
 body {
   font-size: 0.8em;
 }
@@ -38,4 +42,14 @@ body {
 .third {
   display: inline-block;
   width: 30%;
+}
+.card .card-img-top {
+    width: 50%;
+    margin: auto;
+  }
+
+.card {
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
 }

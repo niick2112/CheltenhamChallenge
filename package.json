@@ -8,7 +8,8 @@
     "build": "npm run build:css && npm run build:js && npm run build:pages",
     "build:css": "copyfiles src/index.css -f docs",
     "build:js": "copyfiles src/index.js -f docs",
-    "build:pages": "copyfiles src/index.html -f docs"
+    "build:pages": "copyfiles src/index.html -f docs",
+    "build:all": "copyfiles src/* -f docs"
   },
   "author": "",
   "license": "ISC",
