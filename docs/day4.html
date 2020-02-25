@@ -11,7 +11,7 @@
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">CC20</a>
+        <a class="navbar-brand" href="index.html">CC20</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,17 +44,20 @@
       <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Day 4</h1>
 </div>
-        <div class="container" style="max-width:1400px">
+<div class="container" style="max-width:1400px">
 
-        <div class="row">
-                <div class="col-sm-9">
-                </div>
-                <div class="col-sm-3">
-                    <a class="twitter-timeline" data-height="1200px" href="https://twitter.com/CheltenhamRaces?ref_src=twsrc%5Etfw">Tweets by CheltenhamRaces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-              </div>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <div id="day-table" class="results"></div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <a class="twitter-timeline" data-height="1200px"
+        href="https://twitter.com/CheltenhamRaces?ref_src=twsrc%5Etfw">Tweets by CheltenhamRaces</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
 
-        </div>
+</div>
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
@@ -65,6 +68,26 @@
   
   </footer>
   <!-- Footer -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    function start() {
+      // 2. Initialize the JavaScript client library.
+      gapi.client.init({
+        'apiKey': 'AIzaSyB2-cee6PtK-VSIadBF63OEptBVoyK--Hk',
+      }).then(function () {
+        // 3. Initialize and make the API request.
+        return gapi.client.request({
+          'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/Scores!W3:AC143'
+        })
+      }).then(function (response) {
+        loadDayResults(response.result.values,13);
+      }, function (reason) {
+        console.log('Error: ' + reason.result.error.message);
+      });
+    };
+    // 1. Load the JavaScript client library.
+    gapi.load('client', start);
+    </script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

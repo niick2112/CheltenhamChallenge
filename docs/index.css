@@ -15,6 +15,13 @@ table {
   width:100%;
   overflow-x: scroll;
 }
+.results tr {
+    border: 1px solid #ddd;
+}
+.results table {
+    border-collapse: collapse;
+}
+
 .container h2 {
   padding: 10px;
 }
