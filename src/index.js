@@ -102,6 +102,9 @@ function loadDayResults(values,date) {
       html += "<tr>";
 
     for (var k=0; k<data.length; k++) {
+      if (k==4) {
+        continue;
+      }
       html += "<th>" + data[k] + "</th>";
       // Break into next row
       var next = k+1;
@@ -115,6 +118,9 @@ function loadDayResults(values,date) {
     html += "<tr>";
 
     for (var k=0; k<data.length; k++) {
+      if (k==4) {
+        continue;
+      }
       html += "<td>" + data[k] + "</td>";
       // Break into next row
       var next = k+1;

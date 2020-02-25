@@ -20,6 +20,9 @@ table {
 }
 .results table {
     border-collapse: collapse;
+    overflow: auto;
+    width: 100%;
+    table-layout: auto;
 }
 
 .container h2 {
