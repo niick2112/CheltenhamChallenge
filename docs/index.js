@@ -69,6 +69,31 @@ function loadRunners(values) {
 
 }
 
+function loadRace(values) {
+
+  for (var j=1; j<values.length; j++) {
+    var racer = "";
+    data = values[j];
+    var score = data[3]
+    var img = data[5]
+
+    var leader = values[1]
+    var leaderScore = leader[3];
+    var playerScore = data[3];
+    var randomPos = Math.floor(Math.random() * 70);
+
+    var scorePercent = (((playerScore / leaderScore)*100)*0.90);
+
+    racer += "<img class='race-image' style='left: " + scorePercent + "%; bottom: " + randomPos + "%;' src='" + img + "'></img>";
+
+    $(".live-race").append(racer);
+
+}
+
+}
+
+
+
 function loadDayResults(values,date,form) {
 
   var raceDay = new Date(2020, 2, date, 13, 00, 00);
