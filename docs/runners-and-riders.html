@@ -79,7 +79,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/RunnersAndRiders!A2:E19'
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/RunnersAndRiders!A2:G23'
     })
   }).then(function(response) {
     loadRunners(response.result.values);

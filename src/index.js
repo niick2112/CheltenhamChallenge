@@ -57,9 +57,11 @@ function loadRunners(values) {
     var name = data[0]
     var img = data[4]
     var description = data[3]
+    var weight = data[5]
+    var form = data[6]
     var card = ""
 
-    card += "<div class='card' style='width: 15rem;'><img class='card-img-top' src='" + img + "'></img><div class='card-body'><h5 class='card-title'>" + name + "</h5><p class='card-text'>" + description + "</p></div></div>";
+    card += "<div class='card' style='width: 15rem;'><img class='card-img-top' src='" + img + "'></img><div class='card-body'><h5 class='card-title'>" + name + "</h5><p class='card-text'>" + description + "</p><p class='card-text'><b>Carrying: </b>" + weight + "</p><p class='card-text'><b>Form: </b>" + form + "</p></div></div>";
 
     $(".runners").append(card);
 
