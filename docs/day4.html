@@ -80,7 +80,7 @@
           'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/Scores!W3:AC171'
         })
       }).then(function (response) {
-        loadDayResults(response.result.values,13);
+        loadDayResults(response.result.values,13,"https://forms.gle/DmTKrqDqkeGYhTM49");
       }, function (reason) {
         console.log('Error: ' + reason.result.error.message);
       });

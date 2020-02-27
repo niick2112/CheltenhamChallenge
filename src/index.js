@@ -69,15 +69,15 @@ function loadRunners(values) {
 
 }
 
-function loadDayResults(values,date) {
+function loadDayResults(values,date,form) {
 
   var raceDay = new Date(2020, 2, date, 13, 00, 00);
   var currentTime = new Date();
-  console.log(raceDay);
-  /*if (currentTime < raceDay) {
-    $("#day-table").append('<p>Scores will be available from 1pm</p>')
-  }
-  else {*/
+  //console.log(raceDay);
+  //if (currentTime < raceDay) {
+  //  $("#day-table").append("<p>Scores will be available from 1pm. Submit your entry <a href='" + form + "' target='blank'>here</a>.</p>")
+ // }
+  //else {
   var headings = values[0];
 
   // DRAW THE HTML TABLE
