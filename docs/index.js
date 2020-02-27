@@ -74,7 +74,6 @@ function loadRace(values) {
   for (var j=1; j<values.length; j++) {
     var racer = "";
     data = values[j];
-    var score = data[3]
     var img = data[5]
 
     var leader = values[1]
