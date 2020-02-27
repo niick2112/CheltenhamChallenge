@@ -56,15 +56,25 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="podium">
                         <h2>Current podium</h2>
-                        <div class="second">
-                            <p>SECOND 🥈</p>
+                        <table>
+                          <tr>
+                            <td>
+                        <div class="step second">
+                            <p>🥈</p>
                         </div>
-                        <div class="first">
-                            <p>FIRST 🥇</p>
+                        </td>
+                        <td>
+                        <div class="step first">
+                            <p>🥇</p>
                         </div>
-                        <div class="third">
-                            <p>THIRD 🥉</p>
+                        </td>
+                        <td>
+                        <div class="step third">
+                            <p>🥉</p>
                         </div>
+                        </td>
+                        </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
@@ -93,7 +103,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/LeagueTable!I2:M23'
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/LeagueTable!I2:M24'
     })
   }).then(function(response) {
     loadValues(response.result.values);

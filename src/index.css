@@ -14,9 +14,11 @@ table {
   table-layout:fixed;
   width:100%;
   overflow-x: scroll;
+  font-size: 0.9em;
 }
 .results tr {
     border: 1px solid #ddd;
+    padding: 1px;
 }
 .results table {
     border-collapse: collapse;
@@ -41,20 +43,28 @@ table {
 body {
   font-size: 0.8em;
 }
+.podium {
+    text-align: center;
+}
 .podium img {
   width: 30px;
 }
+.podium td {
+    height: 100%;
+    vertical-align: center;
+    padding: 5px;
+}
+.step {
+    width: 100%;
+}
 .first {
-  display: inline-block;
-  width: 30%;
+    height: 160px;
 }
 .second {
-  display: inline-block;
-  width: 30%;
+    height: 120px;
 }
-.third {
-  display: inline-block;    
-  width: 30%;
+.third {   
+    height: 80px;
 }
 .card .card-img-top {
     width: 50%;
