@@ -79,7 +79,9 @@ function loadRace(values) {
     var leader = values[1]
     var leaderScore = leader[3];
     var playerScore = data[3];
-    var randomPos = Math.floor(Math.random() * 70);
+    //var randomPos = Math.floor(Math.random() * 70);
+
+    var randomPos = Math.floor(Math.random() * (75 - 30 + 1)) + 30;
 
     var scorePercent = (((playerScore / leaderScore)*100)*0.90);
 
