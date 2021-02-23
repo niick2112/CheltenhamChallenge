@@ -97,7 +97,7 @@ function loadRace(values) {
 
 function loadDayResults(values,date,form) {
 
-  var raceDay = new Date(2020, 2, date, 13, 00, 00);
+  var raceDay = new Date(2021, 2, date, 13, 00, 00);
   var currentTime = new Date();
   console.log(raceDay);
   if (currentTime < raceDay) {

@@ -7,11 +7,11 @@
         <script src="index.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <title>Cheltenham Challenge 2020 - Day 4</title>
+        <title>Cheltenham Challenge 2021 - Day 4</title>
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">CC20</a>
+        <a class="navbar-brand" href="index.html">CC21</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,7 +64,7 @@
 <footer class="page-footer font-small blue">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright: Stu and Nick productions</a>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright: Stu and Nick productions</a>
     </div>
     <!-- Copyright -->
   
@@ -79,7 +79,7 @@
       }).then(function () {
         // 3. Initialize and make the API request.
         return gapi.client.request({
-          'path': 'https://sheets.googleapis.com/v4/spreadsheets/1t8Pi64MzrabxwX46n3gcVCmu-hd2wd90GSiSHJyISs4/values/Scores!W3:AC178'
+          'path': 'https://sheets.googleapis.com/v4/spreadsheets/1ccwJ-6QODlbfljRJ2Weke3u4QHz01Xs4ZJW0e_ZhzWA/values/Scores!W3:AC178'
         })
       }).then(function (response) {
         loadDayResults(response.result.values,13,"https://forms.gle/DmTKrqDqkeGYhTM49");
