@@ -101,8 +101,7 @@ function loadDayResults(values,date,form) {
   var currentTime = new Date();
   console.log(raceDay);
   if (currentTime < raceDay) {
-    //$("#day-table").append("<p>Scores will be available from 1pm. Submit your entry <a href='" + form + "' target='blank'>here</a>.</p>")
-    $("#day-table").append("<p>Coming soon.</p>")
+    $("#day-table").append("<p>Scores will be available from 1pm. Submit your entry <a href='" + form + "' target='blank'>here</a>.</p>")
   }
   else {
   var headings = values[0];
