@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "stylus": "latest",
-    "copyfiles": "latest"
+    "copyfiles": "latest",
+    "stylus": "latest"
   }
 }
