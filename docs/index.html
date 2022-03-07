@@ -4,10 +4,10 @@
             <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Cheltenham Challenge is back for 2022! An epic lunch money battle">
+    <meta name="description" content="Cheltenham Challenge is back for 2022! Winner takes lunch">
     <meta property="og:title" content="Cheltenham Challenge 2022" />
     <meta property="og:url" content="https://cc22.co.uk" />
-    <meta property="og:description" content="Cheltenham Challenge is back for 2022! An epic lunch money battle">
+    <meta property="og:description" content="Cheltenham Challenge is back for 2022! Winner takes lunch">
     <meta property="og:image" content="https://res.cloudinary.com/cc20/image/upload/w_300,q_auto,f_auto/misf3bltndu2fjciyngf.png">
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="article" />
@@ -27,7 +27,7 @@
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li><!--
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Results
@@ -47,20 +47,19 @@
               <a class="nav-link" href="live-race.html">Live Race</a>            
             <li class="nav-item">
               <a class="nav-link" href="rules.html">Rules</a>
-            </li>-->
+            </li>
           </ul>
         </div>
       </nav>
       <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Cheltenham Challenge 2022</h1>
-        <p class="lead"><b>The Battle for Lunch Money</b></p>
+        <p class="lead"><b>Winner Takes Lunch</b></p>
 </div>
         <div class="container" style="max-width:1400px">
 
 
         <div class="row">
-          <h2 style="padding-bottom: 100px; text-align: center;">COMING SOON</h2>
-                <!--<div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="col-lg-5 col-md-6 col-sm-12">
                     <div id="league-table">
                         <h2>Live Standings</h2>
                     </div>
@@ -90,17 +89,16 @@
                     </div>
                     <h2 style="text-align: center;">Raceday entry forms</h2>
                     <ul class="list-group">
-                      <li class="list-group-item"><a href="https://forms.gle/438JyrhYFDQZ8KPL7" target="blank">Day 1</a></li>
-                      <li class="list-group-item"><a href="https://forms.gle/ToeDKtWfzioYUxfy8" target="blank">Day 2</a></li>
-                      <li class="list-group-item"><a href="https://forms.gle/zmDGW9mqeKFtQcFj6" target="blank">Day 3</a></li>
-                      <li class="list-group-item"><a href="https://forms.gle/mv7wPQb2qCVxG2hq8" target="blank">Day 4</a></li>
+                      <li class="list-group-item"><a href="https://forms.gle/2wxHcDt6TDbxn8an6" target="blank">Day 1</a></li>
+                      <li class="list-group-item"><a href="https://forms.gle/ozgLvrMeRRJLz1rG9" target="blank">Day 2</a></li>
+                      <li class="list-group-item"><a href="https://forms.gle/tSrvUsq7WdFhs5Cb9" target="blank">Day 3</a></li>
+                      <li class="list-group-item"><a href="https://forms.gle/FKZcHXNrQiqFxKJ16" target="blank">Day 4</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <a class="twitter-timeline" data-tweet-limit="4" href="https://twitter.com/CheltenhamRaces?ref_src=twsrc%5Etfw">Tweets by CheltenhamRaces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
               </div>
-            -->
         </div>
 <!-- Footer -->
 <footer class="page-footer font-small blue">
@@ -122,7 +120,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1ccwJ-6QODlbfljRJ2Weke3u4QHz01Xs4ZJW0e_ZhzWA/values/LeagueTable!I2:M25'
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1BeIh-18Nc-Y_Exd-OCAJrLSVAwXreG2N1oYtPzJyzKk/values/LeagueTable!I1:M29'
     })
   }).then(function(response) {
     loadValues(response.result.values);

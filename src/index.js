@@ -101,12 +101,14 @@ function loadDayResults(values,date,form) {
   var currentTime = new Date();
   console.log(raceDay);
   if (currentTime < raceDay) {
-        //$("#day-table").append("<p>Scores will be available from 1pm. Submit your entry <a href='" + form + "' target='blank'>here</a>.</p>")
-        $("#day-table").append("<p>Coming soon.</p>")
+        $("#day-table").append("<p>Scores will be available from 1pm. Submit your entry <a href='" + form + "' target='blank'>here</a>.</p>")
+        //$("#day-table").append("<p>Coming soon.</p>")
   }
   else {
-  var headings = values[0];
-
+  var headings = values[1];
+  
+  var uniq = [...new Set(headings)];
+  console.log(uniq)
   // DRAW THE HTML TABLE
   var perrow = 7, // 3 items per row
       html = "<table><tr>";
@@ -120,36 +122,18 @@ function loadDayResults(values,date,form) {
       html += "</tr><tr>";
     }
   } */
-  for (var j=1; j<values.length; j++) {
+  html+="<tr>"
+  for (var h=0; h<uniq.length; h++) {
+    html+="<th>" + uniq[h] + "</th>"
+  }
+  html+= "</tr>"
+  for (var j=2; j<values.length; j++) {
 
     data = values[j];
 
-    if (data.length < 2) {
-      html += '</table><h2>' + data[0] + '</h2><table>'
-    }
-    else if ((data[0]) == "") {
-      html += "<tr>";
-
-    for (var k=0; k<data.length; k++) {
-      if (k==4) {
-        continue;
-      }
-      html += "<th>" + data[k] + "</th>";
-      // Break into next row
-      var next = k+1;
-      if (next%perrow==0 && next!=data.length) {
-        html += "</tr><tr>";
-      }
-    }
-    html += "</tr>";
-    }
-    else {
     html += "<tr>";
 
     for (var k=0; k<data.length; k++) {
-      if (k==4) {
-        continue;
-      }
       html += "<td>" + data[k] + "</td>";
       // Break into next row
       var next = k+1;
@@ -158,7 +142,6 @@ function loadDayResults(values,date,form) {
       }
     }
     html += "</tr>";
-  }
 
 }
 

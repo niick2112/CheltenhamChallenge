@@ -77,7 +77,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1ccwJ-6QODlbfljRJ2Weke3u4QHz01Xs4ZJW0e_ZhzWA/values/LeagueTable!I2:N25'
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1BeIh-18Nc-Y_Exd-OCAJrLSVAwXreG2N1oYtPzJyzKk/values/LeagueTable!I2:N29'
     })
   }).then(function(response) {
     loadRace(response.result.values);

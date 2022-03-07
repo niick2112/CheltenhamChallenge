@@ -84,10 +84,10 @@
       }).then(function () {
         // 3. Initialize and make the API request.
         return gapi.client.request({
-          'path': 'https://sheets.googleapis.com/v4/spreadsheets/1ccwJ-6QODlbfljRJ2Weke3u4QHz01Xs4ZJW0e_ZhzWA/values/Scores!I3:O178'
+          'path': 'https://sheets.googleapis.com/v4/spreadsheets/1BeIh-18Nc-Y_Exd-OCAJrLSVAwXreG2N1oYtPzJyzKk/values/Day2Scores!B1:AX29'
         })
       }).then(function (response) {
-        loadDayResults(response.result.values,17,"https://forms.gle/ToeDKtWfzioYUxfy8");
+        loadDayResults(response.result.values,16,"https://forms.gle/ToeDKtWfzioYUxfy8");
       }, function (reason) {
         console.log('Error: ' + reason.result.error.message);
       });
